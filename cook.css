@@ -1,12 +1,11 @@
 @charset "utf-8";
-#for img {
+#for
+{
 	padding-left: 110px;
 	padding-top: 22px;
 }
 #art img {
-	padding-top: 0px;
-	top: 0px;
-	margin-left: -2px;
+
 	margin-top: -41px;
 	margin-bottom: -35px;
 	padding-right: 2px;
@@ -19,8 +18,7 @@
 	margin-bottom: -12px;
 	margin-top: -129px;
 }
-#con img {
-	margin-left: 1px;
+#con {
 	padding-left: 110px;
 }
 
@@ -49,19 +47,17 @@
 	height: auto;
 	width: auto;
 	padding-left: auto;
-	margin-bottom: 0px;
-	margin-top: -8px;
+
 }
 
 
-#rec img {
+#rec{
 	padding-top: 35px;
 	padding-left: 106px;
 }
 
 
-#acc img {
+#acc {
 	padding-left: 105px;
-	margin-top: 162px;
-	position: static;
+	padding-top: 163px;
 }
