@@ -4,7 +4,7 @@
 	padding-left: 110px;
 	padding-top: 22px;
 }
-#art img {
+.art {
 
 	margin-top: -41px;
 	margin-bottom: -35px;
@@ -13,24 +13,11 @@
 	padding-left: 405px;
 	background-position: 229% 27%;
 }
-#art2 img {
-	padding-left: 401px;
-	margin-bottom: -12px;
-	margin-top: -129px;
-}
 #con {
 	padding-left: 110px;
 }
 
-#art3 img {
-	padding-left: 404px;
-	margin-bottom: -7px;
-	margin-top: -39px;
-	padding-top: 13px;
-}
-#art4 img {
-	padding-left: 410px;
-}
+
 #footer {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	text-align: center
