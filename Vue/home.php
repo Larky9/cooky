@@ -4,11 +4,11 @@
 	<title>Cook'isep</title>
 	<meta charset="utf8">
 </head>
-		<link href="cookcon.css" rel="stylesheet" type="text/css">
+		<link href="Vue/cookcon.css" rel="stylesheet" type="text/css">
 	<body>
 	
 <div id="Header">
-	<img src="images/head.jpg" >
+	<img src="Vue/images/head.jpg" >
 </div>
 
 <div class="dessous"> 
