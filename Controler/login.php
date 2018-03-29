@@ -3,10 +3,14 @@
 $login = $_POST['login'];
 $password = $_POST['password'];
 
-if ($login=="abc" && $password=="123"){
-	include "Vue/success.php";
-}else {
-	include "Vue/error.php";
+switch ($login=="abc" && $password=="123") {
+	case true;
+    include "Vue/success.php";
+	break;
+default:
+		include "Vue/error.php";
+	break;
+	
 }
 
 ?>
