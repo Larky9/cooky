@@ -14,9 +14,10 @@
 <div class="dessous"> 
 		
 <form action="index.php?page=login" method="post">
+	
 		<h2>Connectez vous</h2>
-		<input type="tex" placeholder="Votre identifiant">
-		<input type = "password" value = "Mot de passe">
+		<input type="text" value="login">
+		<input type = "password" value = "password">
 		<input type="submit" name="submit">
 		<br><br>
 		<h2>ou inscrivez-vous</h2>
