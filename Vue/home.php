@@ -21,16 +21,11 @@
 		<input type="submit" >
 		<br><br>
 		<h2>ou inscrivez-vous</h2>
-		<input  type="text" placeholder="Nom">
-		<input  type="text" placeholder="Votre identifiant">
+		<input  type="text" name="nom">
+		<input  type="text" name="identifiant">
 		<br><br>
-		<input  type="text" placeholder="Votre adresse mail">
-		<br><br>
-		<input  type="text" placeholder = "Votre adresse mail">
-		<br><br>
-		<input  type="text" placeholder = "Votre mot de passe">
-		<br><br>
-		<input type="text" placeholder = "Confirmer le mot de passe">
+		<input  type="text" name="mail">
+		<input  type="text" name = "password">
 	    <input type="submit" name="submit">
 	</form>
 	</div>
