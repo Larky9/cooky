@@ -22,8 +22,8 @@
 		<br><br>
 		<h2>ou inscrivez-vous</h2>
 		<input  type="text" name="nom">
-		<input  type="text" name="identifiant">
-		<br><br>
+		<input  type="text" name="prenom">
+		<input  type="text" name="login">
 		<input  type="text" name="mail">
 		<input  type="text" name = "password">
 	    <input type="submit" name="submit">
