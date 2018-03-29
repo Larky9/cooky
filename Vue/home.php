@@ -16,8 +16,8 @@
 <form action="index.php?page=login" method="post">
 	
 		<h2>Connectez vous</h2>
-		<input type="text">
-		<input type = "password">
+		<input type="text" name="login">
+		<input type = "password" name="password">
 		<input type="submit" >
 		<br><br>
 		<h2>ou inscrivez-vous</h2>
