@@ -1,0 +1,57 @@
+#Header {
+	border-top-style: groove;
+	border-radius: 12px 6px 17px 13px;
+	position: fixed;
+	height: auto;
+	width: auto;
+	padding-left: auto;
+	margin-bottom: 9px;
+	margin-top: -25px;
+
+}
+    h1
+    {
+        color: #FFA200;
+        text-align: center;
+   		font-family: Georgia;
+    }
+    h2
+    {
+        color: #FFA200;
+ }
+
+    footer
+    {
+        text-align: center;
+    }
+    .imageflottante
+    {
+        float: left;
+    }
+    .dessous
+    {
+	clear: both;
+	padding-top: 89px;
+    }
+    
+    body
+    {
+	background-color: rgb(246, 246, 246);
+	margin-bottom: 1px;
+	padding-bottom: 0px;
+	bottom: 0pt;
+	margin-right: 0px;
+    }
+ 
+    nav
+    {
+        float: right;
+        width: 200px;
+        border: 1px solid black;
+    }
+    form
+    {    
+        text-align: center;
+	}
+
+    
