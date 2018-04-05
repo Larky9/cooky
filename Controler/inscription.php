@@ -11,7 +11,7 @@ $password = $_POST['password'];
 include "Model/user.php";
 include "Model/model.php";
 $model = new Model();
-$createdUser = new User($nom,$prenom,$mail,$adresse,$age,$numero_eleve,$login,$password);
+$createdUser = new User($nom,$prenom,$mail,$age,$adresse,$numero_eleve,$login,$password);
 $user = $model->getUserByEmail($createdUser->getMail());
 if ($user==null){
 	$model->createUser($createdUser);
