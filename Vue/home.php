@@ -16,19 +16,19 @@
 		
 <form action="index.php?page=login" method="post">
 	
-		<h2>Connectez vous</h2>
+		<h2>Connectez-vous</h2>
 		Login :<input type="text" name="ulogin">
 		Mot de passe :<input type = "password" name="upassword">
 		<input type="submit" >
 		<br><br>
 	
 	</form>
-<form action="index.php?page=inscriptionUser" method="post">
+<form action="index.php?action=inscriptionUser" method="post">
 		<h2>Ou inscrivez-vous</h2>
 		Nom :<input  type="text" name="nom"><br><br>
 		Prénom :<input  type="text" name="prenom"><br><br>
 		Login:<input  type="text" name="login"><br><br>
-		MotdePasse :<input  type="text" name="password"><br><br>
+		Mot de Passe :<input  type="text" name="password"><br><br>
 		E-mail<input  type="text" name="mail"><br><br>
 		Age: <input  type="text" name = "age"><br><br>
 		Adresse: <input  type="text" name = "adresse"><br><br>
