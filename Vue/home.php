@@ -26,6 +26,7 @@
 <form action="index.php?page=login" method="post">
 		<h2>Ou inscrivez-vous</h2>
 		Nom :<input  type="text" name="nom"><br><br>
+		Prénom :<input  type="text" name="prenom"><br><br>
 		Login:<input  type="text" name="login"><br><br>
 		E-mail<input  type="text" name="mail"><br><br>
 		Age: <input  type="text" name = "age"><br><br>
