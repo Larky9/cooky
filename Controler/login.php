@@ -1,6 +1,6 @@
 <?php
-$login = $_POST['login'];
-$password = $_POST['password'];
+$login = $_POST['ulogin'];
+$password = $_POST['upassword'];
 if ($login=="abc" && $password=="123")
 {
 	include "Vue/cook.html";
