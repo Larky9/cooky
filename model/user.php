@@ -25,28 +25,28 @@ class User
     }
 
     function getNom(){
-        return $this->$nom;
+        return $this->nom;
     }
     function getMail(){
-        return $this->$mail;
+        return $this->mail;
     }
     function getPrenom(){
-        return $this->$prenom;
+        return $this->prenom;
     }
     function getAdresse(){
-        return $this->$adresse;
+        return $this->adresse;
     }
     function getAge(){
-        return $this->$age;
+        return $this->age;
     }
     function getNumero_eleve(){
-        return $this->$numero_eleve;
+        return $this->numero_eleve;
     }
     function getLogin(){
-        return $this->$login;
+        return $this->login;
     }
     function getPassword(){
-        return $this->$password;
+        return $this->password;
     }
 }
 
