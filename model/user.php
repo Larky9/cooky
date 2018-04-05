@@ -4,24 +4,24 @@ class User
 {
     private $nom;
     private $mail;
-    private $prenom
+    private $prenom;
     private $id;
-    private $age
-    private $adresse
-    private $numero_eleve
-    private $login
-    private $password
+    private $age;
+    private $adresse;
+    private $numero_eleve;
+    private $login;
+    private $password;
 
-    function_construct($nom,$prenom,$mail,$age,$adresse,$numero_eleve,$login,$password)
+    function __construct($nom,$prenom,$mail,$age,$adresse,$numero_eleve,$login,$password)
     {
-        $this->$nome=$nom;
-        $this->$mail=$mail;
-        $this->$age=$age
-        $this->prenom=$prenom
-        $this->$adresse=$adresse;
-        $this->$numero_eleve=$numero_eleve
-        $this->$login=$login
-        $this->$password=$password
+        $this->nom=$nom;
+        $this->mail=$mail;
+        $this->age=$age;
+        $this->prenom=$prenom;
+        $this->adresse=$adresse;
+        $this->numero_eleve=$numero_eleve;
+        $this->login=$login;
+        $this->password=$password;
     }
 
     function getNom(){
