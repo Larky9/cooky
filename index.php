@@ -10,18 +10,28 @@ if ($page=="accueil"){
 }else {
 	
 }*/
-switch ($page) {
-	case 'accueil':
-		include "Vue/home.php";
-		break;
-	case "inscription":
-		include "Vue/home.php";
-		break;
-	default:
-		include "Vue/home.php";
-		break;
+function checkLoggedIn(){
+	session_start();
+	if (!$_SESSION["user"]){
+		header("Location: index.php?page=login");
+	}
 }
-switch ($action) {
+
+if($page){
+	switch ($page) {
+		case 'accueil':
+			include "Vue/cook.html";
+			break;
+		case "inscription":
+			include "Vue/home.php";
+			break;
+		default:
+			include "Vue/home.php";
+			break;
+	}
+}
+else if ($action){
+	switch ($action) {
 	case 'login':
 		include "Controler/login.php";
 		break;
@@ -31,5 +41,10 @@ switch ($action) {
 	default:
 		include "Vue/home.php";
 		break;
+}
+}
+else {
+	checkLoggedIn();
+	showPage("Vue/home.php");
 }
 ?>

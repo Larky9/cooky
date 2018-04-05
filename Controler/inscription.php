@@ -10,10 +10,14 @@ $password = $_POST['password'];
 
 include "Model/user.php";
 include "Model/model.php";
+
 $pass = password_hash($password,PASSWORD_DEFAULT);
+
 $model = new Model();
+
 $createdUser = new User($nom,$prenom,$mail,$age,$adresse,$numero_eleve,$login,$pass);
 $user = $model->getUserByEmail($createdUser->getMail());
+
 if ($user==null){
 	$model->createUser($createdUser);
 	include_once "Vue/created.php";
