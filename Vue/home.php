@@ -3,6 +3,7 @@
 <head>
 	<title>Cook'isep</title>
 	<meta charset="utf8">
+<link href="cookcon.css" rel="stylesheet" type="text/css">
 </head>
 		<link href="Vue/cookcon.css" rel="stylesheet" type="text/css">
 	<body>
@@ -16,16 +17,21 @@
 <form action="index.php?page=login" method="post">
 	
 		<h2>Connectez vous</h2>
-		<input type="text" name="login">
-		<input type = "password" name="password">
+		Login :<input type="text" name="login">
+		Mot de passe :<input type = "password" name="password">
 		<input type="submit" >
 		<br><br>
-		<h2>ou inscrivez-vous</h2>
-		<input  type="text" name="nom">
-		<input  type="text" name="prenom">
-		<input  type="text" name="login">
-		<input  type="text" name="mail">
-		<input  type="text" name = "password">
+	
+	</form>
+<form action="index.php?page=login" method="post">
+		<h2>Ou inscrivez-vous</h2>
+		Nom :<input  type="text" name="nom"><br><br>
+		Prénom:<input  type="text" name="prenom"><br><br>
+		Login:<input  type="text" name="login"><br><br>
+		E-mail<input  type="text" name="mail"><br><br>
+		Age: <input  type="text" name = "age"><br><br>
+		Adresse: <input  type="text" name = "adresse"><br><br>
+		Numéro élève: <input  type="text" name = "numero_eleve"><br><br>
 	    <input type="submit" name="submit">
 	</form>
 	</div>
