@@ -1,6 +1,6 @@
 <?php
-$login = $_POST['ulogin'];
-$password = $_POST['upassword'];
+$login = $_POST['login'];
+$password = $_POST['password'];
 
 include "Model/user.php";
 include "Model/model.php";
@@ -13,7 +13,10 @@ if (password_verify($password,$user ->getPassword())){
 	$_SESSION["user"] = serialize($user);
 	header ("Location: index.php?page=accueil");
 
-} else{
-	header("Location: index.php?page=inscription");
+} 
+else {
+	include "Vue/home.php";
+	echo "essaie encore" ;
+	
 }
 ?>
