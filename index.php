@@ -25,6 +25,8 @@ if($page){
 		case "inscription":
 			include "Vue/home.php";
 			break;
+		case "forum":
+			include "Vue/publication.html"
 		default:
 			include "Vue/home.php";
 			break;
