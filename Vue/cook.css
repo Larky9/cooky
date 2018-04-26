@@ -3,7 +3,8 @@
 }
 .colonne {
     float: left;
-    padding: 15px;
+	padding-top: 10px;
+	padding-right: 155px;
 }
 .clearfix::after {
     content: "";
@@ -19,16 +20,18 @@
 .menu ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+	padding: 0;
+	
 }
 .menu li {
+	
     padding: 8px;
-    margin-bottom: 8px;
-    background-color: #33b5e5;
+    margin-bottom: 25px;
+    background-color: #ffc400;
     color: #ffffff;
 }
 .menu li:hover {
-    background-color: #0099cc;
+    background-color: #ffc400;
 }
 #publication {
 	padding-left: 110px;
