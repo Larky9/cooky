@@ -53,5 +53,5 @@
 					<a href="https://www.facebook.com">Donnez votre avis sur notre page facebook</a>
 				</form>
 		</footer>
-		</center>
+    </center>
  </html>
