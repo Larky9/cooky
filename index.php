@@ -26,7 +26,7 @@ if($page){
 			include "Vue/home.php";
 			break;
 		case "forum":
-			include "Vue/publication.html"
+			include "Vue/publication.html";
 		default:
 			include "Vue/home.php";
 			break;
@@ -41,7 +41,6 @@ else if ($action){
 		include "Controler/inscription.php";
 		break;
 	default:
-		include "Vue/home.php";
 		break;
 }
 }

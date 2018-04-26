@@ -14,6 +14,7 @@
 	background-position: 229% 27%;
 }
 #con {
+	padding-top: 35px;
 	padding-left: 110px;
 }
 
@@ -49,6 +50,7 @@
 	padding-top: 163px;
 }
 #publication {
+	padding-left: 110px;
 	width: 500px;
 	height: 200px;
 	border: 1px solid black;
@@ -58,6 +60,7 @@
 
 }
 #parametres {
+	padding-left: 110px;
 	width: 500px;
 	height: 200px;
 	border: 1px solid black;

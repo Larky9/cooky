@@ -1,3 +1,4 @@
 <?php
-header ("Location: index.php?page=forum");
+$page="forum";
+header ("Location: /cooky/index.php?page=forum");
 ?>
