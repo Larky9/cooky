@@ -4,7 +4,7 @@
 .colonne {
     float: left;
 	padding-top: 10px;
-	padding-right: 155px;
+	padding-right: 170px;
 }
 .clearfix::after {
     content: "";
@@ -24,7 +24,9 @@
 	
 }
 .menu li {
-	
+	margin-left: 20px;
+	text-align: center;
+	border-radius: 10px;
     padding: 8px;
     margin-bottom: 25px;
     background-color: #ffc400;
@@ -34,20 +36,21 @@
     background-color: #ffc400;
 }
 #publication {
-	padding-left: 110px;
+	
 	width: 500px;
 	height: 200px;
 	border: 1px solid black;
 	padding: 5px;
-	overflow: auto;
-	margin: auto;
 	border-color: black;
 	border-radius: 3px;
+	margin-left: 300px;
 
 }
 #parametres {
-	padding-left: 110px;
-	padding: 5px;
 	overflow: auto;
 	margin: auto;
   }
+#footer {
+	
+
+}

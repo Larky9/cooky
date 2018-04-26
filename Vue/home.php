@@ -40,7 +40,10 @@
 
 		</body>
 
-	<footer>
+	<center>
+		<footer>
+
+	
 			Vous pouvez également nous retrouver sur tous les reseaux sociaux : Facebook, Twitter, Instagram et même MySpace !
 			<br>
 			<form>
@@ -50,5 +53,5 @@
 					<a href="https://www.facebook.com">Donnez votre avis sur notre page facebook</a>
 				</form>
 		</footer>
-		
+		</center>
  </html>
