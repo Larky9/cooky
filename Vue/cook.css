@@ -1,53 +1,43 @@
-@charset "utf-8";
-#for
-{
-	padding-left: 110px;
-	padding-top: 22px;
+* {
+    box-sizing: border-box;
 }
-.art {
-
-	margin-top: -41px;
-	margin-bottom: -35px;
-	padding-right: 2px;
-	padding-bottom: 29px;
-	padding-left: 405px;
-	background-position: 229% 27%;
-}
-#con {
-	padding-top: 35px;
-	padding-left: 110px;
-}
-
-
 #footer {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	text-align: center
 }
 
+#Header{
 
-
-
-
-#Header img {
-	border-top-style: groove;
-	border-radius: 12px 6px 17px 13px;
-	position: fixed;
-	height: auto;
-	width: auto;
-	padding-left: auto;
+	padding: 15px;
 
 }
-
-
-#rec{
-	padding-top: 35px;
-	padding-left: 106px;
+.colonne {
+    float: left;
+    padding: 15px;
 }
-
-
-#acc {
-	padding-left: 105px;
-	padding-top: 163px;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.contenu {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
 }
 #publication {
 	padding-left: 110px;
@@ -59,9 +49,6 @@
 	margin: auto;
 	border-color: black;
 	border-radius: 3px;
-	
-
-
 
 }
 #parametres {

@@ -41,10 +41,11 @@ if($page){
 		include_once "Controler/inscription.php";
 		break;
 	default:
+		include "Vue/home.php";
 		break;
 }
 }else {
 	checkLoggedIn();
-	showPage("Vue/home.php");
+	include "Vue/home.php";
 }
 ?>
