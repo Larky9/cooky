@@ -1,15 +1,6 @@
 * {
     box-sizing: border-box;
 }
-#footer {
-	text-align: center
-}
-
-#Header{
-
-	padding: 15px;
-
-}
 .colonne {
     float: left;
     padding: 15px;
@@ -53,11 +44,7 @@
 }
 #parametres {
 	padding-left: 110px;
-	width: 500px;
-	height: 200px;
-	border: 1px solid black;
 	padding: 5px;
-
 	overflow: auto;
 	margin: auto;
   }
