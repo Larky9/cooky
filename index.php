@@ -27,24 +27,23 @@ if($page){
 			break;
 		case "forum":
 			include "Vue/publication.html";
+			break;
 		default:
 			include "Vue/home.php";
 			break;
 	}
-}
-else if ($action){
+}else if ($action){
 	switch ($action) {
 	case 'login':
-		include "Controler/login.php";
+		include_once "Controler/login.php";
 		break;
 	case 'inscriptionUser':
-		include "Controler/inscription.php";
+		include_once "Controler/inscription.php";
 		break;
 	default:
 		break;
 }
-}
-else {
+}else {
 	checkLoggedIn();
 	showPage("Vue/home.php");
 }
