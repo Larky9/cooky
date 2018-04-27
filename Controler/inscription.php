@@ -21,8 +21,8 @@ $user = $model->getUserByEmail($createdUser->getMail());
 if ($user==null){
 	$model->createUser($createdUser);
 	if($user == NULL){ echo "nulll";} else{echo $user;}
-	include_once "Vue/created.php";
+	showPage("Vue/created.php");
 }else {
-	include_once "Vue/existing.php";
+	showPage("Vue/existing.php");
 }
 ?>

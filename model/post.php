@@ -2,7 +2,7 @@
 
 class Post
 {
-    public $titre;
+    public $titres;
     public $recettes;
     public $ingredients;
     public $id;
