@@ -11,7 +11,7 @@
 include "Vue/nom.php";
  ?> 
 <?php
-include "Vue/cook.html";
+showPage("Vue/cook.html");
 ?>
 </body>
 </html>

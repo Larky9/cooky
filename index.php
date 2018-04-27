@@ -17,7 +17,7 @@ if ($page=="accueil"){
 
 function showPage($page){
 	include "Vue/header.html";
-	include_once $page;
+	include $page;
 	include "Vue/footer.html";
 }
 function checkLoggedIn(){
