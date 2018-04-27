@@ -46,5 +46,14 @@ class Model
 	  	}
 	  	return $user;
 	}
+
+	function createPost($postes){
+		$stmt = $this->connexion->prepare("INSERT INTO `postes`(`titres`, `recettes`, `ingredients`) VALUES (:titres,:recettes,:ingredients);");
+		$stmt->bindParam(':titres', $user->getTitres());
+		$stmt->bindParam(':recettes', $user->getRecettes());
+		$stmt->bindParam(':ingredients', $user->getIngredients());
+		$stmt->execute();
+
+	}
 }
 ?>
