@@ -48,6 +48,9 @@ class User
     function getPassword(){
         return $this->password;
     }
+    function setPassword($pass){
+		$this->password=$pass;
+	}
 }
 
 ?>

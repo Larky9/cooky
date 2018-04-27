@@ -25,9 +25,17 @@ class Model
 	}
 	
 	function createUser($user){
-        $this->connexion->exec("INSERT INTO `user`( `nom`, `prenom`, `mail`, `age`, `adresse`, `numero_eleve`, `login`, `password`) VALUES ('".$user->getNom()."',
-        '".$user->getPrenom()."','".$user->getMail()."','".$user->getAge()."','".$user->getAdresse()."','".$user->getNumero_eleve()."','".$user->getLogin()."',
-        '".$user->getPassword()."')");
+
+		$stmt = $this->connexion->prepare("INSERT INTO `user`( `nom`, `prenom`, `mail`, `age`, `adresse`, `numero_eleve`, `login`, `password`) VALUES (:nom,:prenom,:mail,:age,:adresse,:numero_eleve,:login,:password);");
+		$stmt->bindParam(':nom', $user->getNom());
+		$stmt->bindParam(':prenom', $user->getPrenom());
+		$stmt->bindParam(':mail', $user->getMail());
+		$stmt->bindParam(':age', $user->getAge());
+		$stmt->bindParam(':adresse', $user->getAdresse());
+		$stmt->bindParam(':numero_eleve', $user->getNumero_eleve());
+		$stmt->bindParam(':login', $user->getLogin());
+		$stmt->bindParam(':password', $user->getPassword());
+		$stmt->execute();
 	}
 	function getUserByEmail($mail){
 		$sql =  "SELECT * FROM `user` WHERE mail='".$mail."'";

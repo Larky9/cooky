@@ -16,6 +16,7 @@ if ($page=="accueil"){
 }*/
 
 function showPage($page){
+
 	include "Vue/header.html";
 	include $page;
 	include "Vue/footer.html";
@@ -53,6 +54,7 @@ if($page){
 		break;
 	case 'inscriptionUser':
 		include_once "Controler/inscription.php";
+		
 		break;
 	default:
 		include "Vue/home.php";
