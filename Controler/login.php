@@ -15,8 +15,8 @@ if (password_verify($password,$user ->getPassword())){
 
 } 
 else {
-	echo "essaie encore" ;
-	include "Vue/home.php";
+	echo "<font color=red size=5> <center>  Essaie encore, ton mot de passe est probablement faux ! </center> </font>" ;
+	showPage("Vue/home.php") ;
 	
 	
 }
