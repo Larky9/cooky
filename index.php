@@ -34,6 +34,9 @@ if($page){
 		case "forum":
 			showPage("Vue/publication.html");
 			break;
+		case "recette":
+			showPage("Vue/recette.html");
+			break;
 		default:
 			checkLoggedIn();
 			showPage("Vue/home.php");

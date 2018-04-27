@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Cook'isep</title>
-	<meta charset="utf8">
-	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-	<link href="Vue/cook.css" rel="stylesheet" type="text/css">
-</head>
 
-	<body>
-	
-	<div id="Header" onclick="location.href='/cooky/Vue/cook.html';">
-	<h1>Cook'isep</h1>
+
+
+	<div class="clearfix">
+	<div class="colonne menu">
+<ul>
+    <li onclick="location.href='/cooky/index.php?page=accueil';"> acceuil</li>
+</ul>
 </div>
-
-
+<div class="column contenu">
 <div class="dessous"> 		
 <form action="index.php?action=login" method="post">
 	
@@ -38,22 +32,9 @@
 	</form>
 	<center> <button onclick="verifyMail();">Valider</button> </center>
     <script type="text/javascript" src="Vue/index.js"></script>
-	</div>
+	</div>	
+</div>
+</div>
+	
 
 		</body>
-
-	<center>
-		<footer>
-
-	
-			Vous pouvez également nous retrouver sur tous les reseaux sociaux : Facebook, Twitter, Instagram et même MySpace !
-			<br>
-			<form>
-					<input type="text">
-					<input type="submit" value="Mon avis">
-					<br>
-					<a href="https://www.facebook.com">Donnez votre avis sur notre page facebook</a>
-				</form>
-		</footer>
-    </center>
- </html>
