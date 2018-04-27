@@ -2,6 +2,10 @@
 
 $page = $_GET['page'];
 $action = $_GET['action'];
+echo $page and $action;
+if($page == $action ){
+	$page="inscription";
+}
 
 
 /*
@@ -58,4 +62,5 @@ if($page){
 	checkLoggedIn();
 	showPage("Vue/home.php");
 }
+
 ?>
