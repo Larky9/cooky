@@ -10,6 +10,12 @@ if ($page=="accueil"){
 }else {
 	
 }*/
+
+function showPage($page){
+	include "Vue/header.html";
+	include_once $page;
+	include "Vue/footer.html";
+}
 function checkLoggedIn(){
 	session_start();
 	if (!$_SESSION["user"]){
@@ -20,16 +26,17 @@ function checkLoggedIn(){
 if($page){
 	switch ($page) {
 		case 'accueil':
-			include "Vue/cook.html";
+			showPage("Vue/cook.html");
 			break;
 		case "inscription":
-			include "Vue/home.php";
+			showPage("Vue/home.php");
 			break;
 		case "forum":
-			include "Vue/publication.html";
+			showPage("Vue/publication.html");
 			break;
 		default:
-			include "Vue/home.php";
+			checkLoggedIn();
+			showPage("Vue/home.php");
 			break;
 	}
 }else if ($action){
@@ -46,6 +53,6 @@ if($page){
 }
 }else {
 	checkLoggedIn();
-	include "Vue/home.php";
+	showPage("Vue/home.php");
 }
 ?>

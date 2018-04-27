@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Poste ta recette !</title>
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link rel="stylesheet" href="/cooky/Vue/cook.css" type="text/css" >
 </head>
 
 <body>
-  <link rel="stylesheet" href="/cooky/Vue/cook.css" type="text/css" >
+  
   <script  src="/cooky/Vue/publication.js"></script>
 
-  <div id="Header">
-      <img src="/cooky/Vue/images/head.jpg" >
+  <div id="Header" onclick="location.href='/cooky/Vue/cook.html';">
+    <h1>Cook'isep</h1>
   </div>
   
 <div class="clearfix">
@@ -19,7 +21,7 @@
     <li onclick="location.href='/cooky/Vue/cook.html';"> acceuil</li>
     <li onclick="location.href='/cooky/Controler/forum.php';"> forum</li>
     <li onclick="location.href='/cooky/Vue/recette.html';"> recette </li>
-    <li onclick="location.href='/cooky/Vue/deconnexion.html';"> deco </li>
+    <li onclick="location.href='/cooky/index.php?=acceuil';"> deco </li>
   </ul>
   </div>
   <div class="column contenu">
@@ -37,10 +39,10 @@
   <option value="h4">Titre 4</option>
   <option value="h5">Titre 5</option>
   <option value="h6">Titre 6</option>
-</select></div>
+</select>
 
 <div id="publication" contentEditable>
-</div>
+</div></div>
 </div>
 <center>
   <div id="footer">

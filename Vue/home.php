@@ -3,14 +3,16 @@
 <head>
 	<title>Cook'isep</title>
 	<meta charset="utf8">
-
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link href="Vue/cook.css" rel="stylesheet" type="text/css">
 </head>
 
 	<body>
-	<link href="Vue/cookcon.css" rel="stylesheet" type="text/css">
-<div id="Header">
-	<img src="Vue/images/head.jpg" >
+	
+	<div id="Header" onclick="location.href='/cooky/Vue/cook.html';">
+	<h1>Cook'isep</h1>
 </div>
+
 
 <div class="dessous"> 		
 <form action="index.php?action=login" method="post">
