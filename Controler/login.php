@@ -15,8 +15,9 @@ if (password_verify($password,$user ->getPassword())){
 
 } 
 else {
-	include "Vue/home.php";
 	echo "essaie encore" ;
+	include "Vue/home.php";
+	
 	
 }
 ?>

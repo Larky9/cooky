@@ -19,7 +19,7 @@ function showPage($page){
 function checkLoggedIn(){
 	session_start();
 	if (!$_SESSION["user"]){
-		header("Location: index.php?page=login");
+		header("Location: index.php?action=login");
 	}
 }
 
