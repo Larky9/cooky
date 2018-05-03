@@ -49,10 +49,9 @@ class User
         return $this->password;
     }
     function setPassword($pass){
-		$this->password=$pass;
+		
+		return $this->password=$pass;
     }
-    function getId(){
-        return $this->id;
 }
-}
+
 ?>

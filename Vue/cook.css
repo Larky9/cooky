@@ -102,9 +102,10 @@ form
 	margin-right:15%;
 	border-radius: 10px;
 	color: rgb(240, 240, 240);
-	text-align: center;
+	text-align: justify;
 	background-color: #ffae00;
 	size: 10%;
+	text-justify: inter-word;
 }
 #footer{
 	bottom: auto;
