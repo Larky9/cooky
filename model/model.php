@@ -23,7 +23,7 @@ class Model
 	    	echo "Connection failed: " . $e->getMessage();
 	    }
 	}
-	
+}
 	function createUser($user){
 
 		$stmt = $this->connexion->prepare("INSERT INTO `user`( `nom`, `prenom`, `mail`, `age`, `adresse`, `numero_eleve`, `login`, `password`) VALUES (:nom,:prenom,:mail,:age,:adresse,:numero_eleve,:login,:password);");
