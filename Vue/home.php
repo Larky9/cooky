@@ -12,7 +12,7 @@
 <form action="index.php?action=login" method="post">
 	
 		<h2>Connectez-vous</h2>
-		E-mail :<input type="text" name="login">
+		E-mail :<input type="text" name="login"> <br>
 		Mot de passe :<input type = "password" name="password">
 		<input type="submit" >	<br><br>
 </form>
