@@ -22,7 +22,7 @@ class User
         $this->numero_eleve=$numero_eleve;
         $this->login=$login;
         $this->password=$password;
-        $this->id=$id
+        $this->id=$id;
     }
     function getNom(){
         return $this->nom;
@@ -54,5 +54,5 @@ class User
     function getId(){
         return $this->id;
 }
-
+}
 ?>
