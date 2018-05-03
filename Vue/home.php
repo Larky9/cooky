@@ -4,7 +4,7 @@
 	<div class="clearfix">
 	<div class="colonne menu">
 <ul>
-    <li onclick="location.href='/index.php?page=accueil';"> acceuil</li>
+    <li onclick="location.href='/index.php?page=accueil';"> Accueil</li>
 </ul>
 </div>
 <div class="column contenu">
