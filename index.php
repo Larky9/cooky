@@ -17,9 +17,9 @@ if ($page=="accueil"){
 
 function showPage($page){
 
-	include "Vue/header.html";
-	include $page;
-	include "Vue/footer.html";
+	include_once "Vue/header.html";
+	include_once $page;
+	include_once "Vue/footer.html";
 }
 function checkLoggedIn(){
 	session_start();
@@ -54,7 +54,9 @@ if($page){
 		break;
 	case 'inscriptionUser':
 		include_once "Controler/inscription.php";
-		
+		break;
+	case 'post':
+		include_once "Controler/postcont.php";
 		break;
 	default:
 		include "Vue/home.php";

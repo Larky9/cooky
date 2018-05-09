@@ -11,6 +11,7 @@
   <div class="column contenu">
 
       <h2>Mettez votre recette ici</h2>
+  <form action="index.php?action=post" method="post">
   <input type="button" value="G" style="font-weight: bold;" onclick="commande('bold');" />
 <input type="button" value="I" style="font-style: italic;" onclick="commande('italic');" />
 <input type="button" value="S" style="text-decoration: underline;" onclick="commande('underline');" />
@@ -25,9 +26,18 @@
   <option value="h5">Titre 5</option>
   <option value="h6">Titre 6</option>
 </select>
-<input type="submit" >	<br><br>
+<input type="submit">	<br>
+<h3>Titre</h1>
+<input type="text" id="titres" name="titres" contentEditable />
 
-<div id="publication" contentEditable >
-</div></div>
+
+<h3>Tapez votre Recette</h1>
+<input type="text" id="recettes" name="recettes" contentEditable />
+
+<h3>ingredients</h3>
+<input type="ingredients"id="ingredients" name="ingredients" contentEditable />
+
+
 </div>
-
+</form>
+<script  src="Vue/publication.js"></script>

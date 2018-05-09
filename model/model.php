@@ -40,18 +40,25 @@ class Model
 	function getUserByEmail($mail){
 		$sql =  "SELECT * FROM `user` WHERE mail='".$mail."'";
 		$user = null;
-		include_once "Model/user.php";
+		
 	    foreach  ($this->connexion->query($sql) as $row) {
 	    	$user = new User($row['nom'],$row['prenom'],$row['mail'],$row['age'],$row['adresse'],$row['numero_eleve'],$row['login'],$row['password']);
 	  	}
 	  	return $user;
 	}
-
+	function getPostByTitres($titres){
+		$sql = "SELECT * FROM 'postes' WHERE titres='".$titres."'";
+		$postes = null;
+		foreach  ($this->connexion->query($sql) as $row) {
+	    	$postes = new Postes($row['titres'],$row['recettes'],$row['ingredients']);
+	  	}
+	  	return $postes;
+	}
 	function createPost($postes){
 		$stmt = $this->connexion->prepare("INSERT INTO `postes`(`titres`, `recettes`, `ingredients`) VALUES (:titres,:recettes,:ingredients);");
-		$stmt->bindParam(':titres', $user->getTitres());
-		$stmt->bindParam(':recettes', $user->getRecettes());
-		$stmt->bindParam(':ingredients', $user->getIngredients());
+		$stmt->bindParam(':titres', $postes->getTitres());
+		$stmt->bindParam(':recettes', $postes->getRecettes());
+		$stmt->bindParam(':ingredients', $postes->getIngredients());
 		$stmt->execute();
 
 	}

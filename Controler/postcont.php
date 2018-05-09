@@ -6,8 +6,8 @@ $ingredients = $_POST['ingredients'];
 include "Model/post.php";
 include "Model/model.php";
 $model= new Model();
-$id= /* je sais plus comment faire ca..*/
-$createdPost= new Post($titres,$recettes,$ingredients,$id);
+$createdPost= new Post($titres,$recettes,$ingredients);
 
-
+$postes = $model->getPostesByTitres($createdPostes->getTitres());
+?>
 

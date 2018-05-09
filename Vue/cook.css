@@ -82,6 +82,16 @@ body{
 	border-color: black;
 	border-radius: 10px;
 }
+#titre{
+	resize: horizontal;
+	overflow: auto;
+	width: 50%;
+	height: 20%;
+	border: 1px solid black;
+	border-color: black;
+	border-radius: 10px;
+}
+}
 #parametres {
 	
 	overflow: auto;
@@ -98,6 +108,7 @@ color: #ffc400;
 }
 form
 {
+	padding: 5%;
 	margin-left: 25%;
 	margin-right:15%;
 	border-radius: 10px;

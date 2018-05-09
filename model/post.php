@@ -2,10 +2,9 @@
 
 class Post
 {
-    public $titres;
-    public $recettes;
-    public $ingredients;
-    public $id;
+    private $titres;
+    private $recettes;
+    private $ingredients;
     
 
     function __construct($titres,$recettes,$ingredients)

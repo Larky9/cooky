@@ -8,8 +8,8 @@ $numero_eleve = $_POST['numero_eleve'];
 $login = $_POST['login'];
 $password = $_POST['password'];
 
-include "Model/user.php";
-include "Model/model.php";
+include "model/user.php";
+include "model/model.php";
 
 $pass = password_hash($password,PASSWORD_DEFAULT);
 
@@ -20,9 +20,10 @@ $user = $model->getUserByEmail($createdUser->getMail());
 
 if ($user==null){
 	$model->createUser($createdUser);
-	if($user == NULL){ echo "nulll";} else{echo $user;}
+	echo "Bonjour " , $createdUser->getPrenom();
 	showPage("Vue/created.php");
-}else {
+}
+else{
 	showPage("Vue/existing.php");
 }
 ?>
