@@ -20,7 +20,7 @@
 	<p id="alert"></p>
 <form action="index.php?action=inscriptionUser" onmouseenter="inMethod()" onmouseout="out()" action="index.php?action=inscription" method="post" id="form">
 		<h2>Ou inscrivez-vous</h2>
-		Nom :<input  type="text" name="nom" placeholder="name" id="n" onchange="changeName()" ><br><br>
+		Nom :<input  type="text" name="nom" placeholder="name" id="n" onchange="changeName()" required><br><br>
 		Prénom :<input  type="text" name="prenom"><br><br>
 		Login:<input  type="text" name="login"><br><br>
 		Mot de Passe :<input  type="text" name="password"><br><br>

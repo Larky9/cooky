@@ -46,7 +46,7 @@ class Model
 	  	}
 	  	return $user;
 	}
-	function getPostByTitres($titres){
+	function getPostesByTitres($titres){
 		$sql = "SELECT * FROM 'postes' WHERE titres='".$titres."'";
 		$postes = null;
 		foreach  ($this->connexion->query($sql) as $row) {
@@ -54,7 +54,7 @@ class Model
 	  	}
 	  	return $postes;
 	}
-	function createPost($postes){
+	function createPoste($postes){
 		$stmt = $this->connexion->prepare("INSERT INTO `postes`(`titres`, `recettes`, `ingredients`) VALUES (:titres,:recettes,:ingredients);");
 		$stmt->bindParam(':titres', $postes->getTitres());
 		$stmt->bindParam(':recettes', $postes->getRecettes());
