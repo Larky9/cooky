@@ -1,5 +1,4 @@
 
-<div class="column contenu">
 <div class="dessous"> 		
 <form action="index.php?action=login" method="post">
 	
@@ -25,8 +24,3 @@
 	<center> <button onclick="verifyMail();">Valider</button> </center>
     <script type="text/javascript" src="Vue/index.js"></script>
 	</div>	
-</div>
-</div>
-	
-
-		</body>
