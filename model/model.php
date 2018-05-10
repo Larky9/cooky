@@ -47,10 +47,18 @@ class Model
 	  	return $user;
 	}
 	function getPostesByTitres($titres){
-		$sql = "SELECT * FROM 'postes' WHERE titres='".$titres."'";
+		$sql = "SELECT * FROM `postes` WHERE titres='".$titres."'";
 		$postes = null;
 		foreach  ($this->connexion->query($sql) as $row) {
-	    	$postes = new Postes($row['titres'],$row['recettes'],$row['ingredients']);
+	    	$postes = new Post($row['titres'],$row['recettes'],$row['ingredients']);
+	  	}
+	  	return $postes;
+	}
+	function getPostes(){
+		$sql = "SELECT * FROM `postes` WHERE 1 ";
+		$postes = null;
+		foreach  ($this->connexion->query($sql) as $row) {
+	    	$postes = new Post($row['titres'],$row['recettes'],$row['ingredients']);
 	  	}
 	  	return $postes;
 	}
