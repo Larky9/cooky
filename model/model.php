@@ -54,8 +54,8 @@ class Model
 	  	}
 	  	return $postes;
 	}
-	function getPostes(){
-		$sql = "SELECT * FROM `postes` WHERE 1 ";
+	function getPostes($id){
+		$sql = "SELECT * FROM `postes` WHERE id='".$id."'";
 		$postes = null;
 		foreach  ($this->connexion->query($sql) as $row) {
 	    	$postes = new Post($row['titres'],$row['recettes'],$row['ingredients']);
