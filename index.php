@@ -1,18 +1,13 @@
 <?php
 
 $page = $_GET['page'];
-$action = $_GET['action'];
-echo $page and $action;
-if($page == $action ){
-	$page="inscription";
-}
-
-
+$action = $_GET["action"];
+$user = $_GET['user'];
 /*
 if ($page=="accueil"){
 	
 }else {
-	
+	$user = $model->getUserByEmail($login);
 }*/
 
 function showPage($page){

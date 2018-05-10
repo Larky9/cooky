@@ -20,8 +20,7 @@ $user = $model->getUserByEmail($createdUser->getMail());
 
 if ($user==null){
 	$model->createUser($createdUser);
-	echo "Bonjour " , $createdUser->getPrenom();
-	showPage("Vue/created.php");
+	header ("Location: index.php?page=accueil");
 }
 else{
 	showPage("Vue/existing.php");

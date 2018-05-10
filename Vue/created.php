@@ -5,8 +5,6 @@
 <title>Untitled Document</title>
 </head>
 <body>
-<center> <h3 style="color:rgb(240, 200, 70)">  Bienvenue</h3>  
-</center> 
 <?php
 include "Vue/nom.php";
  ?> 

@@ -7,11 +7,11 @@ include "Model/model.php";
 
 $model = new Model();
 $user = $model->getUserByEmail($login);
-
 if (password_verify($password,$user ->getPassword())){
 	session_start();
 	$_SESSION["user"] = serialize($user);
-	header ("Location: index.php?page=accueil");
+	$user = $user->getMail();
+	header ("Location: index.php?page=accueil,user=$user");
 
 } 
 else {

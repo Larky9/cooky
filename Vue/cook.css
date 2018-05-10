@@ -24,7 +24,6 @@ body{
 .colonne {
 	position: -webkit-sticky; /* Safari */
     position: sticky;
-	left: 0;
     float: left;
 	padding-top: 10px;
 	padding-right: 5%;
@@ -91,7 +90,7 @@ body{
 	border-color: black;
 	border-radius: 10px;
 }
-}
+
 #parametres {
 	
 	overflow: auto;
