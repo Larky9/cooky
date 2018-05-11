@@ -1,4 +1,11 @@
+<?php
+session_start();
 
+$_SESSION['prenom']=$_POST[prenom];
+$_SESSION['nom']=$_POST[nom];
+
+echo $_SESSION['prenom'] . ' ' . $_SESSION['nom'];
+?>
 		<h1>Accueil</h1>
     <p>Cook'isep est votre nouvelle association culinaire à l'Isep !</p>
     <p>N'hésitez pas à partager vos fabuleuses recettes !</p>
