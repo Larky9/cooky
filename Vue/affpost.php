@@ -4,11 +4,14 @@
    
     $model = new Model();
     $post=array();
-for ($id=1;$id<=4;$id++){
+    $id=$model->getRow();
+    echo "$id";
+while ($postes!=null){
     $postes = $model->getPostes($id);
     $postes=$postes->getTitres();
     array_push($post,$postes);
-    }
+    $id=$id+1;
+}
 $arrlength = count($post);
 
 for($x = 0; $x < $arrlength; $x++) {
