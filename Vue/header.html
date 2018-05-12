@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+$_SESSION['prenom']=$_POST[prenom];
+$_SESSION['nom']=$_POST[nom];
+
+echo $_SESSION['prenom'] . ' ' . $_SESSION['nom'];
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +20,7 @@
 	<?php include "Vue/nom.php" ?>
 <div id="Header" onclick="location.href='/cooky/index.php?page=accueil';">
 
-	<h1>Cook'isep</h1>
+	<h1>Cook'isep <?php echo $_SESSION['prenom'] . ' ' . $_SESSION['nom']; ?></h1>
 
 </div>
 <link rel="stylesheet" type="text/css" href="cook.css">

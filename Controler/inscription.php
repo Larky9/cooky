@@ -1,4 +1,5 @@
 <?php
+session_destroy();
 $nom = $_POST['nom'];
 $mail = $_POST['mail'];
 $prenom = $_POST['prenom'];

@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+$_SESSION['prenom']=$_POST[prenom];
+$_SESSION['nom']=$_POST[nom];
+
+echo $_SESSION['prenom'] . ' ' . $_SESSION['nom'];
+
 $login = $_POST['login'];
 $password = $_POST['password'];
 
@@ -11,7 +18,7 @@ if (password_verify($password,$user ->getPassword())){
 	session_start();
 	$_SESSION["user"] = serialize($user);
 	$user = $user->getMail();
-	header ("Location: index.php?page=accueil,user=$user");
+	header ("Location: index.php?page=accueil");
 
 } 
 else {
