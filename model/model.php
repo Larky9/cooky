@@ -63,9 +63,14 @@ class Model
 	  	return $postes;
 	}
 	function getRow(){
-		$reponse = $this->connexion->query("SELECT COUNT(*) FROM postes");
-		$result = $this->connexion->fetchColumn($reponse);
-		return serialize($result['data']);
+
+		$id=null
+		$sql="SELECT * FROM `postes` WHERE `id`"
+
+	
+		
+
+		}
 		
 	}
 	
