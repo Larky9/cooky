@@ -5,9 +5,9 @@
     $model = new Model();
     $post=array();
     $row = $model->getRow();
-    for ($id=1;$id<=$row;$id++){
+    for ($id=0;$id<=$row;$id++){
         $postes = $model->getPostes($id);
-        $postes=$postes->getTitres();
+
         array_push($post,$postes);
     }
  
