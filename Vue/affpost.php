@@ -4,19 +4,17 @@
    
     $model = new Model();
     $post=array();
-    $id=$model->getRow();
-    echo "$id";
-while ($postes!=null){
-    $postes = $model->getPostes($id);
-    $postes=$postes->getTitres();
-    array_push($post,$postes);
-    $id=$id+1;
-}
+
+    for ($id=1;$id<=4;$id++){
+        $postes = $model->getPostes($id);
+        $postes=$postes->getTitres();
+        array_push($post,$postes);
+    }
+ 
 $arrlength = count($post);
 
 for($x = 0; $x < $arrlength; $x++) {
     echo $post[$x];
     echo "<br>";
 }
-?>    
-      
+?> 

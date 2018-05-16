@@ -68,6 +68,7 @@ class Model
 		return serialize($result['data']);
 		
 	}
+	
 	function createPoste($postes){
 		$stmt = $this->connexion->prepare("INSERT INTO `postes`(`titres`, `recettes`, `ingredients`) VALUES (:titres,:recettes,:ingredients);");
 		$stmt->bindParam(':titres', $postes->getTitres());
@@ -78,7 +79,3 @@ class Model
 	}
 }
 ?>
-	function getRow(){
-		$sql = query("SELECT COUNT(*) FROM postes");
-		$count = fetchCollumn
-		return fetchCollumn;
