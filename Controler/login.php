@@ -16,8 +16,8 @@ $model = new Model();
 $user = $model->getUserByEmail($login);
 if (password_verify($password,$user ->getPassword())){
 	session_start();
-	$_SESSION["user"] = serialize($user);
 	$user = $user->getMail();
+	$_SESSION["user"] = serialize($user);
 	header ("Location: index.php?page=accueil");
 
 } 

@@ -58,8 +58,13 @@ class Model
 		$sql = "SELECT * FROM `postes` WHERE id='".$id."'";
 		$postes = null;
 		foreach  ($this->connexion->query($sql) as $row) {
-	    	$postes = new Post($row['titres'],$row['recettes'],$row['ingredients']);
-	  	}
+			$postes = new Post($row['titres'],$row['recettes'],$row['ingredients']);
+			if($postes==null){
+				echo "null";
+				return $postes="999";
+				break;
+		  }
+		}
 	  	return $postes;
 	}
 	function getRow(){

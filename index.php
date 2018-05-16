@@ -2,21 +2,20 @@
 
 $page = $_GET['page'];
 $action = $_GET["action"];
-$user = $_GET['user'];
-/*
-if ($page=="accueil"){
-	
-}else {
-	$user = $model->getUserByEmail($login);
-}*/
+
+
 
 function showPage($page){
 
-	include_once "Vue/header.html";
+	include "Vue/header.html";
+	echo $_SESSION["user"];
 	include_once $page;
-	include_once "Vue/footer.html";
+	echo "$user";
+;
+	include "Vue/footer.html";
 }
 function checkLoggedIn(){
+	echo 'login';
 	session_start();
 	if (!$_SESSION["user"]){
 		header("Location: index.php?action=login");
@@ -30,6 +29,9 @@ if($page){
 			break;
 		case "inscription":
 			showPage("Vue/home.php");
+			break;
+		case "deco":
+			showPage("Vue/deco.php");
 			break;
 		case "forum":
 			showPage("Vue/publication.html");
@@ -54,8 +56,7 @@ if($page){
 		include_once "Controler/postcont.php";
 		break;
 	default:
-		checkLoggedIn();
-		showPage("Vue/accueil.php");
+		include "Vue/home.php";
 		break;
 }
 }else {
