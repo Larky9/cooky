@@ -10,8 +10,6 @@ function showPage($page){
 	include "Vue/header.html";
 	echo $_SESSION["user"];
 	include_once $page;
-	echo "$user";
-;
 	include "Vue/footer.html";
 }
 function checkLoggedIn(){

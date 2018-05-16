@@ -20,7 +20,10 @@ $createdUser = new User($nom,$prenom,$mail,$age,$adresse,$numero_eleve,$login,$p
 $user = $model->getUserByEmail($createdUser->getMail());
 
 if ($user==null){
+	session_start();
 	$model->createUser($createdUser);
+	$user = $model->getUserByEmail($createdUser->getMail())->getMail();
+	$_SESSION["user"] = serialize($user);
 	header ("Location: index.php?page=accueil");
 }
 else{
