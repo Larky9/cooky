@@ -54,7 +54,8 @@ if($page){
 		include_once "Controler/postcont.php";
 		break;
 	default:
-		include "Vue/home.php";
+		checkLoggedIn();
+		showPage("Vue/accueil.php");
 		break;
 }
 }else {

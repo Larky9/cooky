@@ -8,5 +8,6 @@ include "Model/model.php";
 $model= new Model();
 $createdPostes= new Post($titres,$recettes,$ingredients);
 $model->createPoste($createdPostes);
+header ("Location: index.php?page=recette");
 ?>
 
