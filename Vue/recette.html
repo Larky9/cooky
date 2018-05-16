@@ -2,8 +2,10 @@
 <?php 
       include "Vue/affpost.php";
       
-      ?><href onclick=>
+ ?><a href onclick= >
 <?php 
+      $row= $model->getRow();
+      echo $row;
       echo $post[1];
       ?>
-</h1>
+      </a>

@@ -63,15 +63,11 @@ class Model
 	  	return $postes;
 	}
 	function getRow(){
-
-		$id=null
-		$sql="SELECT * FROM `postes` WHERE `id`"
-
-	
-		
-
-		}
-		
+		$id=null;
+		$del = $this->connexion->prepare("SELECT * FROM `postes` WHERE `postes`.`id`");
+		$del->execute();
+		$id= $del->rowCount();
+		return $id;
 	}
 	
 	function createPoste($postes){
