@@ -59,11 +59,6 @@ class Model
 		$postes = null;
 		foreach  ($this->connexion->query($sql) as $row) {
 			$postes = new Post($row['titres'],$row['recettes'],$row['ingredients']);
-			if($postes==null){
-				echo "null";
-				return $postes="999";
-				break;
-		  }
 		}
 	  	return $postes;
 	}
@@ -72,6 +67,11 @@ class Model
 		$del = $this->connexion->prepare("SELECT * FROM `postes` WHERE `postes`.`id`");
 		$del->execute();
 		$id= $del->rowCount();
+		return $id;
+	}
+	function getRow2(){
+		$id=$this->connexion->prepare("SELECT MAX(`id`) FROM `postes`");
+		$id=$id->execute();
 		return $id;
 	}
 	
